@@ -68,3 +68,9 @@ trait-spanish-desc = Hola señor, donde esta la biblioteca.
 
 trait-painnumbness-name = Numb
 trait-painnumbness-desc = You lack any sense of feeling pain, being unaware of how hurt you may be.
+
+trait-name-PlateletFactories = Platelet Factories
+trait-description-PlateletFactories =
+    Your body has been augmented with a series of biotailored organs that enhance the owner's long term survivability. These organs will attempt
+    to keep the user alive, even in the face of advanced trauma, all the way up until - but not including - death.
+    Your natural healing is no longer capped, and will now slowly heal any damage type. This includes more exotic injuries like radiation exposure, or cancer.

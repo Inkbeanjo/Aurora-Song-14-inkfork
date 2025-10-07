@@ -1,0 +1,35 @@
+- type: trait
+  id: PlateletFactories
+  category: trait-category-chrome
+  points: -10
+  requirements:
+    - !type:CharacterJobRequirement
+      inverted: true
+      jobs:
+        - StationAi
+        - Borg
+        - MedicalBorg
+        - Prisoner # Bionics should be "Confiscated" from long term prisoners.
+    - !type:CharacterSpeciesRequirement
+      inverted: true
+      species:
+        - IPC
+    - !type:CharacterTraitRequirement
+      inverted: true
+      traits:
+        - HealingFactor
+  functions: # TODO: Code Platelet factories as an actual obtainable implant, and replace this with TraitAddImplant
+    - !type:TraitReplaceComponent
+      components:
+        - type: PassiveDamage
+          allowedStates:
+          - Alive
+          - Critical
+          damageCap: 400
+          damage:
+            groups:
+              Brute: -0.3
+              Burn: -0.3
+              Airloss: -0.3
+              Toxin: -0.3
+              Genetic: -0.3
