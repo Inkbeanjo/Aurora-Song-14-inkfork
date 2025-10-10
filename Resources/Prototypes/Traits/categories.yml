@@ -14,4 +14,4 @@
 - type: traitCategory
   id: Chrome
   name: trait-category-chrome
-  maxTraitPoints: 10
+  maxTraitPoints: 5
